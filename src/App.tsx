@@ -21,6 +21,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import LegalNoticesPage from './pages/LegalNoticesPage';
 import TermsPage from './pages/TermsPage';
 import PricingPage from './pages/PricingPage';
+import PromoPage from './pages/PromoPage';
 
 // Composant pour gérer le scroll vers le haut
 function ScrollToTop() {
@@ -58,6 +59,8 @@ function App() {
             <Route path="/legal-notices" element={<LegalNoticesPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/promo" element={<PromoPage />} />
+
           </Routes>
         </main>
         <Footer />
