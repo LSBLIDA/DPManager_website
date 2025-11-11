@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -20,7 +20,8 @@ import ReferencesPage from './pages/ReferencesPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import LegalNoticesPage from './pages/LegalNoticesPage';
 import TermsPage from './pages/TermsPage';
-// Removed pricing and promo pages from routing (redirected)
+import PricingPage from './pages/PricingPage';
+import PromoPage from './pages/PromoPage';
 
 // Composant pour gérer le scroll vers le haut
 function ScrollToTop() {
@@ -57,8 +58,8 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/legal-notices" element={<LegalNoticesPage />} />
             <Route path="/terms" element={<TermsPage />} />
-            <Route path="/pricing" element={<Navigate to="/" replace />} />
-            <Route path="/promo" element={<Navigate to="/" replace />} />
+            <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/promo" element={<PromoPage />} />
 
           </Routes>
         </main>
